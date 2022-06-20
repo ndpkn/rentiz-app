@@ -1,0 +1,39 @@
+.help {
+    display: flex;
+    justify-content: space-between;
+    padding: 160px 0;
+
+    &__overlay {
+        background-color: #1a242f6b;
+        width: 100%;
+        position: relative;
+    }
+    &__images {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+    &__info {
+        width: 45%;
+        &-header {
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 126%;
+        }
+        &-text {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 170%;
+        }
+        &-btn {
+            padding: 22px 42px;
+            font-size: 24px;
+            margin-top: 45px;
+        }
+    }
+    &__pattern {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+}

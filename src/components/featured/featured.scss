@@ -1,0 +1,15 @@
+.featured {
+    margin-top: 180px !important;
+    margin-bottom: 180px !important;
+    &__header > h2 {
+        font-weight: 600;
+        font-size: 48px;
+    }
+    &__items {
+        margin-top: 30px;
+
+        > img {
+            height: 100%;
+        }
+    }
+}

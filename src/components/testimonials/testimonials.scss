@@ -1,0 +1,57 @@
+@import '../app/App.scss';
+
+.testimonials {
+    position: relative;
+    margin-bottom: 180px !important;
+}
+.review {
+    width: 1000px;
+    margin: 0 auto;
+    &::before {
+        content: '“';
+        font-size: 260px;
+        color: $green;
+        display: block;
+        height: 120px;
+    }
+    &__body {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 157%;
+    }
+    &__name {
+        font-size: 22px;
+        line-height: 126%;
+        >p {
+            margin: 0;
+        }
+    }
+    &__position {
+        font-size: 18px;
+        line-height: 170%;
+        color: #D6D6D6;
+        >p {
+            margin: 0;
+        }
+    }
+}
+.arrows__review {
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+    right: 210px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+}
+.arrow__review {
+    cursor: pointer;
+    > img {
+        height: 40px;
+    }
+}
+.vertical__img {
+    margin: 0 35px;
+    opacity: 0.2;
+}

@@ -1,0 +1,108 @@
+.popular {
+    padding: 160px 0;
+    &__overlay {
+        background-image: url('../../images/bg__popular1.png');
+        max-width: 100% !important;
+        background-color: #1A242F;
+    }
+    &__items {
+        position: relative;
+    }
+    &__items-item {
+        padding: 10px;
+        > h3 {
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+        > p {
+            font-size: 18px;
+            margin-top: 0 ;
+            margin-bottom: 20px;
+        }
+        > img {
+            width: 100%;
+            height: 350px;
+            margin: 0;
+        }
+    }
+    &__items-icon{
+        > .bed {
+            margin-right: 15px;
+            &::before {
+                margin-right: 5px;
+                vertical-align: middle;
+                content: url('../../images/icon_pop1.png');
+            }
+        }
+        > .bath {
+            margin-right: 15px;
+            &::before {
+                margin-right: 5px;
+                vertical-align: middle;
+                content: url('../../images/icon_pop2.png');
+            }
+        }
+        > .sqr {
+            &::before {
+                margin-right: 5px;
+                vertical-align: middle;
+                content: url('../../images/icon_pop3.png');
+            }
+        }
+    }
+    &__seeAll {
+        display: flex;
+        margin-top: 65px;
+    }
+}
+.arrows {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+}
+.arrow {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #A9ADB1;
+    border-radius: 50px;
+    width: 78px;
+    height: 78px;
+    cursor: pointer;
+    & > img {
+        height: 22px;
+    }
+}   
+.prev {
+    left: -80px;
+
+}
+.next {
+    right: -80px;
+}
+.popular__button {
+    font-size: 24px;
+    padding: 22px 42px; 
+    margin: 0 auto;
+}
+.allItemsBlock {
+    display: none;
+    flex-direction: column;
+    &-items {
+        display: flex;
+        flex-wrap: wrap;
+        > .popular__items-item {
+            width: 33%;
+        }
+    }
+}
+.hide {
+    display: none !important;
+}
+.show {
+    display: flex !important;
+}
